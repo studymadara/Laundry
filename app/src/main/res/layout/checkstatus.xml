@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Status"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:background="@android:color/holo_orange_dark"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textSize="18dp"
+            android:paddingLeft="15dp"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="45%"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textSize="88dp"
+            android:paddingLeft="15dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:textSize="45dp"/>
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="95dp"
+            android:layout_height="wrap_content"
+            android:text="Delivery Time"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Time here will be displayed"
+            android:textSize="25dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="95dp"
+            android:id="@+id/test1"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="25dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

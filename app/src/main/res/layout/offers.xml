@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OFFERS!!"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:background="@android:color/holo_orange_dark"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TableLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:text="5 shirts + 3 jeans"/>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:text="50 INR"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:text="15 shirts + 4 Sarees"/>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:text="150 INR"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+</LinearLayout>
+    </ScrollView>

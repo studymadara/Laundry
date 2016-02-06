@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+
+        android:textSize="18dp"
+        android:paddingLeft="15dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_marginLeft="45dp"/>
+
+    <CheckBox
+        android:layout_marginLeft="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"/>
+
+
+    <CheckBox
+        android:layout_marginLeft="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelled"/>
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data from database will be fetched with all orders even cancelled once will be displayed"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:paddingLeft="15dp"/>
+
+</LinearLayout>
