@@ -12,9 +12,16 @@
     >
 
 <RelativeLayout
-
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/washhub"
+        android:scaleType="centerInside"
+
+        />
 
     <View android:layout_width="1dp"
         android:layout_height="wrap_content"
@@ -104,7 +111,7 @@
                     <TextView />
                 </TableRow>
                 <TableRow>
-                    <TextView />
+
                 </TableRow>
                 <TableRow>
                     <TextView />
@@ -128,10 +135,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="Place Order"
+                android:textColor="@android:color/holo_red_light"
+                android:textStyle="bold|italic"
                 android:layout_weight="1"
-
+                android:textSize="16dp"
                 android:background="?android:attr/selectableItemBackground"
                 android:id="@+id/b3"/>
+
 
             <View android:layout_width="1dp"
                 android:layout_height="50dp"
@@ -141,6 +151,9 @@
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textStyle="bold|italic"
                 android:text="Check Status"
                 android:minHeight="122dp"
                 android:background="?android:attr/selectableItemBackground"
@@ -148,13 +161,21 @@
 
                 />
 
+
                 </TableRow>
 
                 <TableRow>
                     <TextView />
                 </TableRow>
                 <TableRow>
-                    <TextView />
+                    <Button
+                        android:layout_weight="1"
+                        android:text="Donation"
+                        android:textSize="16dp"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold|italic"
+                        android:background="?attr/selectableItemBackground"
+                        android:id="@+id/donation"/>
                 </TableRow>
                 <TableRow>
                     <TextView />
