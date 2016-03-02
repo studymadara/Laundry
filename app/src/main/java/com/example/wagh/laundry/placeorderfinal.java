@@ -1,9 +1,11 @@
 package com.example.wagh.laundry;
 
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -26,8 +28,8 @@ public class placeorderfinal extends AppCompatActivity {
     RadioButton rb1;
     Button pay;
     TextView tvJeans,tvSarees,tvShirt,tvTax,tvTotal,tvAddress,tvContact,tvPickupTime;
-    Intent iii = new Intent(getBaseContext(),MainActivity.class);
-    Bundle bb= getIntent().getExtras();
+
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,11 @@ public class placeorderfinal extends AppCompatActivity {
         rb1=(RadioButton)radioGroup.findViewById(radioGroup.getCheckedRadioButtonId());
         tvPickupTime=(TextView) findViewById(R.id.tvpickupTime);
 
+        //final Intent iii = new Intent(getBaseContext(),MainActivity.class);
+
+        Intent i3=getIntent();
+
+        Bundle bb= i3.getExtras();
 
 
         getShirtssave=bb.getInt("getShirt");
@@ -60,6 +67,8 @@ public class placeorderfinal extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
                 rb1=(RadioButton)radioGroup.findViewById(radioGroup.getCheckedRadioButtonId());
+                boolean rb1check= rb1.isChecked();
+
 
             }
         });
@@ -186,11 +195,14 @@ public class placeorderfinal extends AppCompatActivity {
                 /**
                  * Make something which will text the number 9888871762 OR email admin@thewashhub.com
                  * pickup message in short details about the order**/
-                /**Toast.makeText(placeorderfinal.this,"Thank you",Toast.LENGTH_LONG).show();
-                String phoneNumber="9768948065";
+                Toast.makeText(placeorderfinal.this,"Thank you",Toast.LENGTH_LONG).show();
+                String phoneNumber="9930007903";
                 String message="";
 
-                message+="Order::Address";
+                try
+                {
+
+                    message+="Order::Address";
                 message+=getAddressSave;
                 message+="Contact Number";
                 message+=getContactsave;
@@ -199,10 +211,15 @@ public class placeorderfinal extends AppCompatActivity {
                 message+="Payment Method:";
                 message+=rb1.getText();
 
-                SmsManager sms = SmsManager.getDefault();
-                sms.sendTextMessage(phoneNumber,null,message,null,null);
-                startActivity(iii);
-**/
+                    PendingIntent pi=PendingIntent.getActivity(getBaseContext(),0,new Intent(getBaseContext(),MainActivity.class),0);
+                SmsManager smsManager = SmsManager.getDefault();
+                smsManager.sendTextMessage(phoneNumber,null,message,pi,null);
+                }
+                catch (Exception e)
+                {
+                    Log.e("ERROR","SMS",e);
+                }
+
 
             }
         });
