@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donation"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:background="@android:color/holo_orange_dark"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNITED Youth Organisation (UYO)"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:background="@android:color/holo_orange_dark"
+            android:textStyle="bold|italic"
+            android:textColor="@android:color/white"/>
+
+
+        <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**Pickup Location:"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Enter the Address"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pickup Time"
+        android:textSize="22sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="2"
+            android:phoneNumber="true"
+            android:id="@+id/ettimegetHourdonation"
+            android:hint="Enter Hour"
+            android:inputType="time"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ettimegetMindonation"
+            android:phoneNumber="true"
+            android:hint="Enter Minutes"
+            android:maxLength="2"
+            android:inputType="time"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg22donation">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AM"
+                android:id="@+id/rgamdonation"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM"
+                android:id="@+id/rgpmdonation"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup Date"
+            android:textSize="22sp"/>
+
+
+        <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/datePicker"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Number"
+            android:textSize="22sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your contact number"
+            android:maxLength="10"
+            android:id="@+id/donationetnumberget"
+            android:phoneNumber="true"/>
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Wearables:"
+        android:textSize="22sp"
+        android:id="@+id/selectwerabels"
+        android:layout_marginTop="22dp"/>
+
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="55dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/placeordertl1"
+        android:layout_below="@id/selectwerabels">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:inputType="number"
+                android:text="0"
+                android:id="@+id/shirtvalue"
+                android:textSize="22sp"
+                android:textAlignment="center"/>
+
+
+            <EditText
+                android:text="0"
+                android:inputType="number"
+                android:layout_marginLeft="62sp"
+                android:id="@+id/jeansvalue"
+                android:textSize="22sp"
+                android:textAlignment="center"/>
+
+
+            <EditText
+                android:text="0"
+                android:id="@+id/sareesvalue"
+                android:inputType="number"
+                android:layout_marginLeft="62sp"
+                android:textSize="22sp"
+                android:textAlignment="center"/>
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:text="Shirt"
+
+                android:id="@+id/shirt"
+                android:textSize="18dp"/>
+
+            <TextView
+
+                android:layout_marginLeft="62sp"
+                android:textSize="18dp"
+                android:text="Jeans"
+                android:id="@+id/jeans"/>
+
+            <TextView
+                android:textSize="18dp"
+
+                android:layout_marginLeft="62sp"
+
+                android:text="Sarees"
+                android:id="@+id/sarees"/>
+
+
+
+        </TableRow>
+    </TableLayout>
+
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="** Pickup Service is FREE!"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/uyo"
+            android:maxHeight="122dp"
+            android:maxWidth="122dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanks for Donating"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:id="@+id/donatefinal"/>
+    </LinearLayout>
+
+</ScrollView>
